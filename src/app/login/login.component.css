@@ -1,0 +1,10 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+      text-align: center;
+    width: 60%;
+    margin-left: 20%;
+  }

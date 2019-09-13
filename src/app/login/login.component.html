@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div>
+                <h1 class="text-center">Login-Page</h1>
+            </div>
+            <div class="example-container">
+                <mat-form-field>
+                    <input type="text" matInput placeholder="Enter the username" autocomplete="off" #userEmail required autofocus>
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                    <input type="password" matInput placeholder="Enter the password" #userPassword required>
+                </mat-form-field>
+                <br>
+                <button mat-raised-button class="mat-warn" (click)="authservice.login(userEmail.value, userPassword.value)">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
